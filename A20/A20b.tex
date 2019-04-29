@@ -1,0 +1,64 @@
+\documentclass[a4paper,headsepline,11pt,DIV15,twoside,titlepage,tablecaptionabove,bibtotocnumbered]{scrartcl}
+%bibtotocnumbered für Numerierung der Literatur
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage[misc]{ifsym} 			%for letter icon on titlepage
+\usepackage{pdfpages}
+\usepackage{amsmath,amsthm,amssymb}	
+\usepackage{geometry}				%fuer Silbentrennung
+\usepackage{scrpage2}				%fure pagestyle
+\usepackage{parskip}				%Text wird eingerückt nach Bild und Section: Unterdrückung
+%\usepackage{float}
+\usepackage[
+	colorlinks=true,	%blaues inhaltsverzeichniss
+	linkcolor=blue
+]{hyperref}
+\usepackage[all]{hypcap}			%Verlinkungen genau auf Abb. und 								nicht auf Caption
+\usepackage{bold-extra}
+\usepackage{cite}
+\usepackage{svg}
+%\usepackage{siunitx}	%Verwendung von Abstand zw Einheiten etc: Nachschlagen, ist nützlich
+\usepackage{subfig}
+\usepackage{bm}
+\usepackage{todonotes}
+\usepackage{caption}
+\usepackage{todonotes}
+
+\geometry{
+	left=3.0cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+}
+\date{29.04.19}
+\pagestyle{scrheadings}
+\ohead{Julian Hoßbach \\ Simon Koppenhöfer}
+\chead{Gruppe: A-086 / A-099 \\ Physikalisches Praktikum 1 Teil 2}
+\ihead{Versuch: A20 \\ Datum: 29.04.2019}
+
+\begin{document}
+\clearpage
+
+\input{texfiles/titlepage}
+ 
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\addtocontents{toc}{\protect\enlargethispage{1cm}}
+
+
+\newpage 
+\thispagestyle{empty}
+\quad 
+\newpage
+\setcounter{page}{1}
+
+\newpage
+
+\bibliography{texfiles/Bibliography}{}
+\bibliographystyle{plain}
+
+\end{document}
